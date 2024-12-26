@@ -1,0 +1,20 @@
+#!/bin/env python3
+
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+import json
+
+GRAPH_FILE='licomp_gnuguide/data/gnu-quick-guide-licenses.json'
+
+with open(GRAPH_FILE) as fp:
+    graph_data = json.load(fp)
+
+
+print('digraph depends {')
+print('  node [shape=box]')
+for lic,value in graph_data['licenses'].items():
+    for allowed in value['allowed']:
+        print(f'    \"{lic}\" -> \"{allowed}\"')
+print('}')
