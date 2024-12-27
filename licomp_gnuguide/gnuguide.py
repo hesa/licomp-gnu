@@ -8,6 +8,8 @@ import json
 import os
 
 from licomp_gnuguide.config import module_name
+from licomp_gnuguide.config import module_url
+from licomp_gnuguide.config import original_data_url
 from licomp_gnuguide.config import licomp_gnuguide_version
 from licomp_gnuguide.config import my_supported_api_version
 from licomp_gnuguide.config import disclaimer
@@ -75,6 +77,12 @@ class GnuQuickGuideLicense(Licomp):
 
     def version(self):
         return licomp_gnuguide_version
+
+    def url(self):
+        return module_url
+
+    def data_url(self):
+        return original_data_url
 
     def supported_api_version(self):
         return my_supported_api_version
