@@ -25,6 +25,9 @@ Copyright: Henrik Sandklef
 License: GPL-3.0-or-later
 
 Files: licomp_gnuguide/data/gnu-quick-guide-licenses.json
-Copyright: (c) 2007, 2008, 2010, 2022 Free Software Foundation, Inc.
+Copyright: (c) 2007, 2008, 2010, 2022 Free Software Foundation, Inc. (c) 2024 Henrik Sandklef
 License:  CC-BY-ND-4.0
 
+Files: licomp-gnuguide.png
+Copyright: (c) 2007, 2008, 2010, 2022 Free Software Foundation, Inc. (c) 2024 Henrik Sandklef
+License:  CC-BY-ND-4.0
