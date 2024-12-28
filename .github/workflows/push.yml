@@ -34,7 +34,7 @@ jobs:
       run: python3 setup.py build sdist
     - name: Lint
       run: |
-        flake8 licomp_dwheeler
+        flake8 licomp_gnu
     - name: Install
       run: python3 setup.py install
     - name: Test
