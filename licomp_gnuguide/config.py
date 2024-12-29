@@ -7,7 +7,7 @@ my_supported_api_version = '0.4'
 
 cli_name = 'licomp-gnuguide'
 module_name = 'licomp_gnuguide'
-module_url = 'https://github.com/hesa/licomp-gnu'
+module_url = 'https://github.com/hesa/licomp-gnuguide'
 original_data_url = 'https://www.gnu.org/licenses/quick-guide-gplv3.html'
 
 disclaimer = 'The data or the output of the tools in this repository come with guarantee. For legal advice, contact a lawyer.'
