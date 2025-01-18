@@ -10,7 +10,7 @@ module_name = 'licomp_gnuguide'
 module_url = 'https://github.com/hesa/licomp-gnuguide'
 original_data_url = 'https://www.gnu.org/licenses/quick-guide-gplv3.html'
 
-disclaimer = 'The data or the output of the tools in this repository come with guarantee. For legal advice, contact a lawyer.'
+disclaimer = 'The data or the output of the tools in this repository come with NO guarantee. For legal advice, contact a lawyer.'
 
 description = """
 Simple command line tool to check compatibility between two licenses, given context
