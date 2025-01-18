@@ -20,4 +20,4 @@ ld --version
 ld supported-provisionings
 ld supported-usecases
 ld supported-licenses
-ld verify -il MIT -ol BSD-3-Clause
+ld verify -il BSD-3-Clause -ol GPL-2.0-only
