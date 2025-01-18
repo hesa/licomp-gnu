@@ -49,6 +49,7 @@ class GnuQuickGuideLicense(Licomp):
             path = []
         if outbound == inbound:
             return True, path
+
         for allowed in self.licenses[inbound]['allowed']:
             if allowed == outbound:
                 path.append(allowed)
@@ -61,7 +62,12 @@ class GnuQuickGuideLicense(Licomp):
         return False, path
 
     def _outbound_inbound_compatibility(self, outbound, inbound, usecase, provisioning, modified):
-        compat, path = self.__outbound_inbound_path_sub(outbound, inbound, [])
+        try:
+            compat, path = self.__outbound_inbound_path_sub(outbound, inbound, [])
+        except KeyError:
+            compat = CompatibilityStatus.compat_status_to_string(CompatibilityStatus.UNSUPPORTED)
+            return self.outbound_inbound_reply(CompatibilityStatus.UNSUPPORTED,
+                                               f'No support for outbound:"{outbound}" using inbound:"{inbound}"')
 
         sep = ' ---> '
         if not path:
