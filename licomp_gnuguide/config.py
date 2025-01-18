@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Henrik Sandklef
+# SPDX-FileCopyrightText: 2025 Henrik Sandklef
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 licomp_gnuguide_version = '0.3.5'
-my_supported_api_version = '0.4'
+my_supported_api_version = '0.5'
 
 cli_name = 'licomp-gnuguide'
 module_name = 'licomp_gnuguide'
